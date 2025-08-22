@@ -35,6 +35,3 @@ string GetHello()
     return "Read from FILE:\n\n" + message;
 }
 
-
-// Deploy with:
-// az webapp up --name my-very-best-net24s-chapp -g test1 --location westeurope --sku B1 --os-type linux
