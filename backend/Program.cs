@@ -1,3 +1,6 @@
+string path = Directory.GetCurrentDirectory();
+Console.WriteLine("The current directory is {0}", path);
+
 // 1
 
 var builder = WebApplication.CreateBuilder(args);
