@@ -30,7 +30,9 @@ string GetHello()
 {
     // look for all assets in the same folder, where the program (dll's etc. ) are
     // usually bin/Debug/net9.0) 
+#pragma warning disable CS8604 // Possible null reference argument.
     var helloFolder = new DirectoryInfo(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location));
+#pragma warning restore CS8604 // Possible null reference argument.
 
     var helloPath = Path.Combine(helloFolder.FullName, "hello.txt");
 
